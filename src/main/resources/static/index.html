@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Outfit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <span class="brand">Outfit</span>
+</header>
+
+<main class="layout">
+
+    <!-- Venstre: garderoben -->
+    <section>
+        <h2>Garderobe</h2>
+        <div id="wardrobe" class="grid"></div>
+    </section>
+
+    <!-- Hoejre: upload og outfit -->
+    <aside class="side-col">
+
+        <section class="panel">
+            <h3>Tilføj tøj</h3>
+            <input id="imageInput" type="file" accept="image/*">
+            <button id="uploadBtn">Upload</button>
+            <p id="uploadMsg" class="msg"></p>
+        </section>
+
+        <section class="panel">
+            <h3>Find et outfit</h3>
+            <input id="occasion" placeholder="Fx: skole, 8 grader og regn">
+            <button id="outfitBtn">Find outfit</button>
+            <p id="outfitMsg" class="msg"></p>
+            <p id="reason" class="reason"></p>
+            <div id="outfit" class="grid small"></div>
+        </section>
+
+    </aside>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
